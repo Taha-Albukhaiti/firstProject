@@ -146,4 +146,89 @@ g = "Taha"
 print(g.upper())
 
 g = "Taha"
-print(g.lower() )
+print(g.lower())
+
+# split() rsplit()
+a = " Hallo Lolo "
+print(a.split())
+
+a = " Hallo-Lolo "
+print(a.split())
+
+a = " Hallo-Lolo "
+print(a.split("-"))
+
+a = " Hallo-Lolo-sdasd-sdad "
+print(a.split("-", 2))
+
+a = " Hallo-Lolo-sdasd-sdad "
+print(a.rsplit("-", 2))
+
+
+# center()
+
+e = "Taha"
+print(e.center(10))
+print(e.center(7, "*"))
+
+# count()
+
+f = "Ifas ffasf aksf PHP sda SQL and PHP"
+print(f.count("PHP"))
+print(f.count("PHP", 0, 22))
+print(f.count("PHP", 0))
+
+# swapcase()
+
+f = "SQL and PHP"
+print(f.swapcase())
+print(f.swapcase())
+
+# startswith()
+f = "SQL and PHP"
+print(f.startswith("S"))
+print(f.startswith("S"))
+print(f.startswith("P", 8))
+print(f.endswith("P"))
+
+# index()
+# index(Substring, Start, ENd)
+
+f = "SQL and PHP"
+print(f.index("a", 0, 9))
+
+# find(Substring, Start, ENd)
+
+f = "SQL and PHP"
+print(f.find("a", 0, 7))
+print(f.find("a", 0, 3))
+
+# rjust(width, File Char) ljust(width, File Char)
+
+m = "Taha"
+print(m.rjust(6, "H"))
+print(m.rjust(8))
+m = "Taha"
+print(m.ljust(6, "H"))
+
+# splitlines()
+
+e = """First Line
+Srcond Line
+Third Line"""
+print(e.splitlines())
+
+# expandtabs()
+
+g = "Hello\tWorld\tHier\tist\tTaha"
+print(g)
+print(g.expandtabs(1))
+
+# Sterings Formating
+name2 = "Taha"
+age2 = 24
+print('Ich bin: %s und bin: %d' % (name2, age2) + " Jahre Alt")
+print('Ich bin: {} und bin: {}' .format(name2, age2) + " Jahre Alt")
+print('Ich bin: {} und bin: {:.3f}' .format(name2, age2) + " Jahre Alt")
+
+
