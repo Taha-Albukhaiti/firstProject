@@ -1,4 +1,3 @@
-
 """
 This is Not Multiple Line Comments
 """
@@ -61,7 +60,6 @@ print("bcd\tAsfafaf")
 
 print("\x4F")
 
-
 # -------------------------------------------
 # -- Concatenation
 # -------------------------------------------
@@ -109,7 +107,7 @@ print(myS5[2])
 # Slicing ( Access Multiple Sequence Items )
 print(myS5[5:7])
 print(myS5[:7])
-print(myS5[:])     # Full Data
+print(myS5[:])  # Full Data
 print(myS5[0::1])  # Full Data
 print(myS5[::1])  # Full Data
 print(myS5[::2])  #
@@ -163,7 +161,6 @@ print(a.split("-", 2))
 
 a = " Hallo-Lolo-sdasd-sdad "
 print(a.rsplit("-", 2))
-
 
 # center()
 
@@ -228,7 +225,77 @@ print(g.expandtabs(1))
 name2 = "Taha"
 age2 = 24
 print('Ich bin: %s und bin: %d' % (name2, age2) + " Jahre Alt")
-print('Ich bin: {} und bin: {}' .format(name2, age2) + " Jahre Alt")
-print('Ich bin: {} und bin: {:.3f}' .format(name2, age2) + " Jahre Alt")
+print('Ich bin: {} und bin: {}'.format(name2, age2) + " Jahre Alt")
+print('Ich bin: {} und bin: {:.3f}'.format(name2, age2) + " Jahre Alt")
 
+# Numbers Complex
+complex = 5 + 6j
+print(type(5 + 6j))
+print("Real Part Is: {}".format(complex))
+print("Real Part Is: {}".format(complex.real))
+print("Real Part Is: {}".format(complex.imag))
 
+# Tuples
+
+myTuple = ("Taha", "Ali")
+myTuple2 = "Taha", "Ali"
+print(myTuple)
+print(myTuple2)
+
+# Tuple indxing
+
+mxx = (1, 3, 4, 4, 5)
+print(mxx[2])
+
+# Tuple items
+
+mxx = (1, 3, 4, 4, 5, "Taha", True)
+print(mxx[-1])
+
+# Tuple with One Element
+
+mxxx = ("Taha",)
+print(type(mxxx))
+print(len(mxxx))
+
+# Tuple Concatenation
+
+a = (1, 2, 4)
+b = (2, 44)
+c = a + ("asf", False) + b
+print(c)
+print(a * 5)
+
+# Methods => count() => index
+
+a = (1, 3, 3, 4, 2, 3, 4, 9, 3)
+print(a.count(3))
+print("the Position  of Index  Is: {:d}".format(a.index(9)))
+print(f"the Position  of Index  Is: {a.index(9)}")
+
+# Tuple Destruct
+
+a = ("A", "B", "C")
+
+# x, y, z = "A", "B", "C"
+x, y, z = a
+print(x)
+print(y)
+print(z)
+
+a = ("A", "B", 4, "C")
+x, y, _, z = a
+print(x)
+print(y)
+print(z)
+
+# set
+m = {"Taha", 23, 42.3, True, (2, 4, 5)}
+print(m)
+# m = {"Taha", 23, 42.3, True, [2, 4, 5]}  # unhashable type: 'list'
+
+# Items Is Unique Menge keine wiederholung von Elementen
+
+a = {"Taha", "Taha", 3, 4, 3}
+
+print(a)
