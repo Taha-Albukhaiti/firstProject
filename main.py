@@ -324,7 +324,6 @@ print(c)
 c.difference_update(d)  # c - d
 print(c)
 
-
 print("=" * 40)  # Separator
 
 # intersection() Durchschnitt Menge
@@ -344,7 +343,6 @@ h = {"Osama", "X", 2}
 print(g)
 g.intersection_update(h)  # g & h
 print(g)
-
 
 print("=" * 40)  # Separator
 
@@ -415,11 +413,11 @@ print(g.isdisjoint(i))  # True
 # Dictionary
 
 user = {
-  "name": "Osama",
-  "age": 36,
-  "country": "Egypt",
-  "skills": ["Html", "Css", "JS"],
-  "rating": 10.5
+    "name": "Osama",
+    "age": 36,
+    "country": "Egypt",
+    "skills": ["Html", "Css", "JS"],
+    "rating": 10.5
 }
 
 print(user)
@@ -432,18 +430,18 @@ print(user.values())
 # Two-Dimensional Dictionary
 
 languages = {
-  "One": {
-    "name": "Html",
-    "progress": "80%"
-  },
-  "Two": {
-    "name": "Css",
-    "progress": "90%"
-  },
-  "Three": {
-    "name": "Js",
-    "progress": "90%"
-  }
+    "One": {
+        "name": "Html",
+        "progress": "80%"
+    },
+    "Two": {
+        "name": "Css",
+        "progress": "90%"
+    },
+    "Three": {
+        "name": "Js",
+        "progress": "90%"
+    }
 }
 
 print(languages)
@@ -458,24 +456,24 @@ print(len(languages["Two"]))
 # Create Dictionary From Variables
 
 frameworkOne = {
-  "name": "Vuejs",
-  "progress": "80%"
+    "name": "Vuejs",
+    "progress": "80%"
 }
 
 frameworkTwo = {
-  "name": "ReactJs",
-  "progress": "80%"
+    "name": "ReactJs",
+    "progress": "80%"
 }
 
 frameworkThree = {
-  "name": "Angular",
-  "progress": "80%"
+    "name": "Angular",
+    "progress": "80%"
 }
 
 allFramework = {
-  "one": frameworkOne,
-  "two": frameworkTwo,
-  "three": frameworkThree
+    "one": frameworkOne,
+    "two": frameworkTwo,
+    "three": frameworkThree
 }
 
 print(allFramework)
@@ -487,7 +485,7 @@ print(allFramework)
 # clear()
 
 user = {
-  "name": "Osama"
+    "name": "Osama"
 }
 print(user)
 user.clear()
@@ -498,7 +496,7 @@ print("=" * 50)
 # update()
 
 member = {
-  "name": "Osama"
+    "name": "Osama"
 }
 print(member)
 member["age"] = 36
@@ -511,7 +509,7 @@ print("=" * 50)
 # copy()
 
 main = {
-  "name": "Osama"
+    "name": "Osama"
 }
 
 b = main.copy()
@@ -532,7 +530,7 @@ print(main.values())
 # setdefault()
 
 user = {
-  "name": "Osama"
+    "name": "Osama"
 }
 print(user)
 print(user.setdefault("age", 36))
@@ -543,8 +541,8 @@ print("=" * 40)
 # popitem()
 
 member = {
-  "name": "Osama",
-  "skill": "PS4"
+    "name": "Osama",
+    "skill": "PS4"
 }
 print(member)
 member.update({"age": 36})
@@ -555,8 +553,8 @@ print("=" * 40)
 # items()
 
 view = {
-  "name": "Osama",
-  "skill": "XBox"
+    "name": "Osama",
+    "skill": "XBox"
 }
 
 allItems = view.items()
@@ -573,7 +571,6 @@ a = ('MyKeyOne', 'MyKeyTwo', 'MyKeyThree')
 b = "X"
 
 print(dict.fromkeys(a, b))
-
 
 # -------------
 # -- Boolean --
@@ -634,7 +631,6 @@ print(age > 40 or country == "Egypt" or rank > 20)  # True
 
 print(age > 16)  # True
 print(not age > 16)  # Not True = False
-
 
 # --------------------------
 # -- Assignment Operators --
@@ -825,7 +821,7 @@ print(f"Your Username Is {theUsername} \nYour Website Is {theWebsite}")
 # -------------------------------------
 
 # Input Age
-age = int(input('What\'s Your Age ? ').strip())
+#  age = int(input('What\'s Your Age ? ').strip())
 
 # Get Age in All Time Units
 months = age * 12
@@ -856,20 +852,360 @@ cPrice = 100
 
 if uCountry == "Egypt":
 
-  print(f"Hello {uName} Because You Are From {uCountry}")
-  print(f"The Course \"{cName}\" Price Is: ${cPrice - 80}")
+    print(f"Hello {uName} Because You Are From {uCountry}")
+    print(f"The Course \"{cName}\" Price Is: ${cPrice - 80}")
 
 elif uCountry == "KSA":
 
-  print(f"Hello {uName} Because You Are From {uCountry}")
-  print(f"The Course \"{cName}\" Price Is: ${cPrice - 60}")
+    print(f"Hello {uName} Because You Are From {uCountry}")
+    print(f"The Course \"{cName}\" Price Is: ${cPrice - 60}")
 
 elif uCountry == "Kuwait":
 
-  print(f"Hello {uName} Because You Are From {uCountry}")
-  print(f"The Course \"{cName}\" Price Is: ${cPrice - 50}")
+    print(f"Hello {uName} Because You Are From {uCountry}")
+    print(f"The Course \"{cName}\" Price Is: ${cPrice - 50}")
 
 else:
 
-  print(f"Hello {uName} Because You Are From {uCountry}")
-  print(f"The Course \"{cName}\" Price Is: ${cPrice - 30}")
+    print(f"Hello {uName} Because You Are From {uCountry}")
+    print(f"The Course \"{cName}\" Price Is: ${cPrice - 30}")
+
+    # ---------------
+    # -- Nested If --
+    # ---------------
+
+    uName = "Osama"
+    isStudent = "Yes"
+    uCountry = "Egypt"
+    cName = "Python Course"
+    cPrice = 100
+
+    if uCountry == "Egypt" or uCountry == "KSA" or uCountry == "Qatar":
+
+        if isStudent == "Yes":
+
+            print(f"Hi {uName} Because U R From {uCountry} And Student")
+            print(f"The Course \"{cName}\" Price Is: ${cPrice - 90}")
+
+        else:
+
+            print(f"Hi {uName} Because U R From {uCountry}")
+            print(f"The Course \"{cName}\" Price Is: ${cPrice - 80}")
+
+
+    elif uCountry == "Kuwait" or uCountry == "Bahrain":
+
+        print(f"Hi {uName} Because U R From {uCountry}")
+        print(f"The Course \"{cName}\" Price Is: ${cPrice - 50}")
+
+    else:
+
+        print(f"Hi {uName} Because U R From {uCountry}")
+        print(f"The Course \"{cName}\" Price Is: ${cPrice - 30}")
+
+# ----------------------------------
+# -- Ternary Conditional Operator --
+# ----------------------------------
+
+country = "A"
+
+if country == "Egypt":
+    print(f"The Weather in {country} Is 15")
+elif country == "KSA":
+    print(f"The Weather in {country} Is 30")
+else:
+    print("Country is Not in The List")
+
+# Short If
+
+movieRate = 18
+age = 18
+
+if age < movieRate:
+
+    print("Movie S Not Good 4U")  # Condition If True
+
+else:
+
+    print("Movie S Good 4U And Happy Watching")  # Condition If False
+
+print("Movie S Not Good 4U" if age < movieRate else "Movie S Good 4U And Happy Watching")
+
+# Condition If True | If Condition | Else | Condition If False
+
+
+# -------------------------------------------------
+# -- Calculate Age Advanced Version and Training --
+# -------------------------------------------------
+
+# Write A Very Beautiful Note
+print("#" * 80)
+print(" You Can Write The First Letter Or Full Name of The Time Unit ".center(80, '#'))
+print("#" * 80)
+""" 
+# Collect Age Data
+age = input("Please Write Your Age").strip()
+
+# Collect Time Unit Data
+unit = input("Please Choose Time Unit: Months, Weeks, Days ").strip().lower()
+
+# Get Time Units
+months = int(age) * 12
+weeks = months * 4
+days = int(age) * 365
+
+if unit == 'months' or unit == 'm':
+
+  print("You Choosed The Unit Months")
+  print(f"You Lived For {months:,} Months.")
+
+elif unit == 'weeks' or unit == 'w':
+
+  print("You Choosed The Unit Weeks")
+  print(f"You Lived For {weeks:,} Weeks.")
+
+elif unit == 'days' or unit == 'd':
+
+  print("You Choosed The Unit Days")
+  print(f"You Lived For {days:,} Days.")
+"""
+
+# --------------------------
+# -- Membership Operators --
+# --------------------------
+# in
+# not in
+# --------------------------
+
+# String
+
+name = "Osama"
+print("s" in name)
+print("a" in name)
+print("A" in name)
+
+print("#" * 50)
+
+# List
+
+friends = ["Ahmed", "Sayed", "Mahmoud"]
+print("Osama" in friends)
+print("Sayed" in friends)
+print("Mahmoud" not in friends)
+
+print("#" * 50)
+
+# Using In and Not In With Condition
+
+countriesOne = ["Egypt", "KSA", "Kuwait", "Bahrain", "Syria"]
+countriesOneDiscount = 80
+
+countriesTwo = ["Italy", "USA"]
+countriesTwoDiscount = 50
+
+myCountry = "Italy"
+
+if myCountry in countriesOne:
+
+    print(f"Hello You Have A Discount Equal To ${countriesOneDiscount}")
+
+elif myCountry in countriesTwo:
+
+    print(f"Hello You Have A Discount Equal To ${countriesTwoDiscount}")
+
+else:
+
+    print("You Have No Discount")
+
+# ----------------------------------
+# -- Practical Membership Control --
+# ----------------------------------
+"""
+# List Contains Admins
+admins = ["Ahmed", "Osama", "Sameh", "Manal", "Rahma", "Mahmoud", "Enas"]
+
+# Login
+name = input("Please Type Your Name ").strip().capitalize()
+
+# If Name is In Admin
+if name in admins:
+
+    print(f"Hello {name} Welcome Back")
+
+    option = input("Delete Or Update Your Name ?").strip().capitalize()
+
+    # Update Option
+    if option == 'Update' or option == 'U':
+
+        theNewName = input("Your New Name Please ").strip().capitalize()
+
+        admins[admins.index(name)] = theNewName
+
+        print("Name Updated.")
+
+        print(admins)
+
+    # Delete Option
+    elif option == 'Delete' or option == 'D':
+
+        admins.remove(name)
+
+        print("Name Deleted")
+
+        print(admins)
+
+    # Wrong Option
+    else:
+
+        print("Wrong Option Choosed")
+
+else:
+
+    status = input("Not Admin, Add You Y, N ? ").strip().capitalize()
+
+    if status == "Yes" or status == "Y":
+
+        print("You Have Been Added")
+
+        admins.append(name)
+
+        print(admins)
+
+    else:
+
+        print("You Are Not Added.")
+
+"""
+# -------------------
+# -- Loop => While --
+# -------------------
+# while condition_is_true
+#   Code Will Run Until Condition Become False
+# -----------------------
+
+a = 0
+
+while a < 10:
+    print(a)
+
+    a += 1
+
+print("Loop is Done")  # True Become False
+
+while False:
+    print("Will Not Print")
+
+# ----------------------------
+# -- Loop => While Training --
+# ----------------------------
+# while condition_is_true
+#   Code Will Run Until Condition Become False
+# -----------------------
+
+myF = ["Os", "Ah", "Ga", "Al", "Ra", "Sa", "Ta", "Ma", "Mo", "Wa"]
+
+# print(len(myF))  # List Length [10]
+
+a = 0
+
+while a < len(myF):  # a < 10
+
+    print(f"#{str(a + 1).zfill(3)} {myF[a]}")
+
+    a += 1  # a = a + 1
+
+else:
+
+    print("All Friends Printed To Screen.")
+
+# print(myF[0])
+# print(myF[1])
+# print(myF[2])
+# print(myF[3])
+# print(myF[4])
+# print(myF[5])
+# print(myF[6])
+# print(myF[7])
+# print(myF[8])
+# print(myF[9])
+
+# ----------------------------
+# -- Loop => While Training --
+# -- Simple Bookmark Manage --
+# ----------------------------
+""" 
+# Empty List To Fill Later
+myFavouriteWebs = []
+
+# Maximum Allowed Websites
+maximumWebs = 5
+
+while maximumWebs > 0:
+
+    # Input The New Website
+    web = input("Website Name Without https:// ")
+
+    # Add The New Website To The List
+    myFavouriteWebs.append(f"https://{web.strip().lower()}")
+
+    # Decrease One Number From Allowed Websites
+    maximumWebs -= 1  # maximumWebs = maximumWebs - 1
+
+    # Print The Add Message
+    print(f"Website Added, {maximumWebs} Places Left")
+
+    # Print The List
+    print(myFavouriteWebs)
+
+else:
+
+    print("Bookmark Is Full, You Cant Add More")
+
+# Check If List Is Not Empty
+if len(myFavouriteWebs) > 0:
+
+    # Sort The List
+    myFavouriteWebs.sort()
+
+    index = 0
+
+    print("Printing The List Of Websites in Your Bookmark")
+
+    while index < len(myFavouriteWebs):
+        print(myFavouriteWebs[index])
+
+        index += 1  # index = index + 1
+
+"""
+
+
+# ----------------------------
+# -- Loop => While Training --
+# -- Simple Password Guess --
+# ----------------------------
+
+tries = 4
+
+mainPassword = "Osama@123"
+
+inputPassword = input("Write Your Password: ")
+
+while inputPassword != mainPassword:  # True
+
+  tries -= 1  # tries = tries - 1
+
+  print(f"Wrong Password, { 'Last' if tries == 0 else tries } Chance Left")
+
+  inputPassword = input("Write Your Password: ")
+
+  if tries == 0:
+
+    print("All Tries Is Finished.")
+
+    break
+
+    print("Will Not Print")
+
+else:
+
+  print("Correct Password")
