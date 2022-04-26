@@ -1178,12 +1178,12 @@ if len(myFavouriteWebs) > 0:
 
 """
 
-
 # ----------------------------
 # -- Loop => While Training --
 # -- Simple Password Guess --
 # ----------------------------
 
+""" 
 tries = 4
 
 mainPassword = "Osama@123"
@@ -1204,8 +1204,219 @@ while inputPassword != mainPassword:  # True
 
     break
 
-    print("Will Not Print")
+    # print("Will Not Print")
 
 else:
 
   print("Correct Password")
+
+"""
+
+# -----------------
+# -- Loop => For --
+# -----------------
+# for item in iterable_object :
+#   Do Something With Item
+# -----------------------------
+# item Is A Vairable You Create and Call Whenever You Want
+# item refer to the current position and will run and visit all items to the end
+# iterable_object => Sequence [ list, tuples, set, dict, string of charcaters, etc ... ]
+# ---------------------------------------------------------------
+
+myNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+for number in myNumbers:
+
+    # print(number * 17)
+
+    if number % 2 == 0:  # Even
+
+        print(f"The Number {number} Is Even.")
+
+    else:
+
+        print(f"The Number {number} Is Odd.")
+
+else:
+
+    print("The Loop Is Finished")
+
+myName = "Taha"
+
+for letter in myName:
+    print(f" [ {letter.upper()} ] ")
+
+# -----------------
+# -- Loop => For --
+# --  Trainings  --
+# -----------------
+
+# Range
+
+myRange = range(1, 101)
+
+for number in myRange:
+    print(number)
+
+# Dictionary
+
+mySkills = {
+    "Html": "70%",
+    "Css": "60%",
+    "JS": "60%",
+    "Java": "70%",
+    "Python": "30%",
+    "MySQL": "80%"
+}
+
+print(mySkills['JS'])
+print(mySkills.get("Python"))
+
+for skill in mySkills:
+    # print(skill)
+
+    print(f"My Progress in Lang {skill} Is: {mySkills.get(skill)}")
+
+
+# -----------------
+# -- Loop => For --
+# -- Nested Loop --
+# -----------------
+
+print("#" * 40)
+peoples = ["Osama", "Ahmed", "Sayed", "Ali"]
+
+skills = ['Html', 'Css', 'Js']
+
+for name in peoples:  # Outer Loop
+
+  print(f"{name} Skills Is: ")
+
+  for skill in skills:  # Inner Loop
+
+    print(f"- {skill}")
+
+# Dictionary
+
+peoples = {
+  "Osama": {
+    "Html": "70%",
+    "Css": "80%",
+    "Js": "70%"
+  },
+  "Ahmed": {
+    "Html": "90%",
+    "Css": "80%",
+    "Js": "90%"
+  },
+  "Max": {
+    "Html": "70%",
+    "Css": "60%",
+    "Js": "90%"
+  }
+}
+
+print(peoples["Osama"])
+print(peoples["Ahmed"])
+print(peoples["Max"])
+
+print(peoples["Osama"]['Css'])
+print(peoples["Ahmed"]['Css'])
+print(peoples["Max"]['Css'])
+
+for name in peoples:
+
+  print(f"Skills and Progress For {name} Is: ")
+
+  for skill in peoples[name]:
+
+    print(f"{skill.upper()} => {peoples[name][skill]}")
+
+print("#" * 50)
+
+# ---------------------------
+# -- Break, Continue, Pass --
+# ---------------------------
+
+myNumbers = [1, 2, 3, 5, 7, 10, 13, 14, 15, 19]
+
+# Continue
+
+for number in myNumbers:
+
+  if number == 13:
+
+    continue
+
+  print(number)
+
+print("#" * 50)
+
+# Break
+
+for number in myNumbers:
+
+  if number == 13:
+
+    break
+
+  print(number)
+
+print("#" * 50)
+
+# Pass
+
+for number in myNumbers:
+
+  if number == 13:
+
+    pass
+
+  print(number)
+
+print("#" * 60)
+# ------------------------------
+# -- Advanced Dictionary Loop --
+# ------------------------------
+
+mySkills = {
+  "HTML": "80%",
+  "CSS": "90%",
+  "JS": "70%",
+  "PHP": "80%"
+}
+
+print(mySkills.items())
+
+#######################
+
+for skill in mySkills:
+
+  print(f"{skill} => {mySkills[skill]}")
+
+#######################
+
+for skill_key, skill_progress in mySkills.items():
+
+  print(f"{skill_key} => {skill_progress}")
+
+#######################
+
+myUltimateSkills = {
+  "HTML": {
+    "Main": "80%",
+    "Pugjs": "80%"
+  },
+  "CSS": {
+    "Main": "90%",
+    "Sass": "70%"
+  }
+}
+
+for main_key, main_value in myUltimateSkills.items():
+
+  print(f"{main_key} Progress Is: ")
+
+  for child_key, child_value in main_value.items():
+
+    print(f"- {child_key} => {child_value}")
