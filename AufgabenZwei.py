@@ -53,14 +53,25 @@ while bb <= 2.5:
 
     if bb == 0:
         bb += 1
-        print("schon1 ", bb)
+        print("Noch ", 2.5 - bb)
 
     elif bb >= 1:
-        zah = 0.25
-        zah = zah / 1
-        bb += zah
-        print("schon ", bb )
+        print(bb)
+        s = 0
+        m = 1
+        while not s > 2.5:
+            #print(bb)
+            #m /= 2
+            s += (m / 2)
+            m -= (m/2)
+            print("noch: ", 1.5 - s)
 
 else:
-    if bb >= 2.5:
+    #if bb >= 0:
         print("Fertig")
+
+
+"""
+bb += s
+            print("schon ", bb)
+"""
