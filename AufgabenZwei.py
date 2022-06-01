@@ -26,52 +26,21 @@ die der Frosch zurücklegt entspricht also der Summe 1+0.5+0.25+0.125+…
 Schreibe einen Python-Code, der nach jedem Sprung ausgibt, wie weit der Frosch insgesamt gekommen ist.
 
 """
-
-bb = 0
-ziel = 2.5
-zahl = 0
-sprungAnzahl = 0
-
-""" 
-while(b):
-    zahl += 1
-    if zahl == 1:
-        b -= 1
-        print("noch ", b)
-
-    elif zahl > 1:
-        b /= 2
-        print("noch ", b)
-
-else :
-    if b == 0:
-        print("Fertig")
-        
-"""
-
-while bb <= 2.5:
-
-    if bb == 0:
-        bb += 1
-        print("Noch ", 2.5 - bb)
-
-    elif bb >= 1:
-        print(bb)
-        s = 0
-        m = 1
-        while not s > 2.5:
-            #print(bb)
-            #m /= 2
-            s += (m / 2)
-            m -= (m/2)
-            print("noch: ", 1.5 - s)
-
-else:
-    #if bb >= 0:
-        print("Fertig")
-
-
-"""
-bb += s
-            print("schon ", bb)
-"""
+# Nummer des aktuellen Sprungs
+sprungnummer = 0
+# Insgesamt gesprungene Distanz
+distanz = 0  # insgesamt gesprungene Distanz
+# Weite des aktuellen Sprungs: Wert muss größer als das Abbruchkriterium sein
+aktuelle_sprungweite = 1
+# Abbruchkriterium: Sprungweite unter 1 mm
+delta = 0.001
+# solange die Weite des aktuellen Sprungs größer als 1 mm ist:
+while aktuelle_sprungweite > delta:
+# Ausgabe der aktuellen Sprungnummer und der insgesamt gesprungenen Distanz
+      print("Sprung ",sprungnummer," aktuelle Distanz:",distanz)
+# Die Weite des aktuellen Sprungs bestimmen
+      aktuelle_sprungweite = 1 / 2 ** sprungnummer
+# Die Summe aller Sprünge bestimmen
+      distanz += aktuelle_sprungweite
+# Die Nummer des aktuellen Sprungs um 1 erhöhen
+      sprungnummer += 1
