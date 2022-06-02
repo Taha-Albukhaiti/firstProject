@@ -44,3 +44,14 @@ while aktuelle_sprungweite > delta:
       distanz += aktuelle_sprungweite
 # Die Nummer des aktuellen Sprungs um 1 erhöhen
       sprungnummer += 1
+
+e = """First Line
+Srcond Line
+Third Line"""
+print(e.splitlines())
+
+# expandtabs()
+
+g = "Hello\tWorld\tHier\tist\tTaha"
+print(g)
+print(g.expandtabs(1))
