@@ -24,7 +24,7 @@ for line in myFile:
         elif ";B" in line:
             print(line)
 """
-
+"""
 from pathlib import Path
 
 myFile = open("files/studierende.csv")
@@ -39,14 +39,14 @@ for line in inp1:
         myfile.touch(exist_ok=True)
         f = myfile.open("a")
         f.write(inp.strip() + ";" + inp1.strip() + ";" + mar+"\n")
-        #print(myfile.read())
+        print(myfile.read())
 
     elif line.upper().startswith("B"):
         myfile = Path('files/studierende_b.csv')
         myfile.touch(exist_ok=True)
         f = myfile.open("a")
         f.write(inp.strip() + ";" + inp1.strip() + ";" + mar+"\n")
-    print(myfile.read())
+        print(myfile.read())
 
 
 from pathlib import Path
@@ -54,8 +54,11 @@ from pathlib import Path
 #myFile = open("studierende.csv")
 
 """
-import os
 
+"""
+from pathlib import Path
+
+import os
 
 inp = input("Geben Sie Ihre Vorname: ")
 inp1 = input("Geben Sie Ihre Nachname: ")
@@ -68,14 +71,29 @@ for line in inp1:
         myfile1 = open('studierende_n.csv', "a+")
         myfile1.write(inp.strip()+ ";" + inp1.strip() + ";" + mar +"\n" )
         myfile1.seek(0)
-        print(myfile1)
+        print(myfile1.read())
         myfile1.close()
     elif line.upper().startswith("B"):
-        myfile2 = open('studierende_b.csv', "a+").read()
+        myfile2 = open('studierende_b.csv', "a+")
         myfile2.write(inp.strip() + ";" + inp1.strip() + ";" + mar +"\n" )
         myfile2.seek(0)
-        print(myfile2)
+        print(myfile2.read())
         myfile2.close()
 
 """
 
+from pathlib import Path
+
+import os
+
+inp = input("Geben Sie Ihre Vorname: ")
+inp1 = input("Geben Sie Ihre Nachname: ")
+mar = input("Geben Sie Ihre Matrikelnummer: ")
+s = False
+
+for line in inp1[0]:
+    myfile1 = open('studierende_' + line + '.csv', "a+")
+    myfile1.write(inp.strip() + ";" + inp1.strip() + ";" + mar + "\n")
+    myfile1.seek(0)
+    print(myfile1.read())
+    myfile1.close()
