@@ -17,6 +17,7 @@ Hinweis: Um ein Zeichen in einem String durch ein anderes Zeichen zu ersetzen,
  alle Vorkom- men von “x” in dem String durch “y”.
 """
 
+
 def funk(bundsland, hauptstast, flaeche, einwohner):
     bundFile = open("bundesFile.txt", "a+")
     bundFile.write(r"Bundesland:" + bundsland.strip() + ";" + "Hauptstadt:"
@@ -36,12 +37,14 @@ while True:
     einwohner = input("Wieviel Einwohner gibt es da? ")
     funk(bundsland, hauptstast, flaeche1, einwohner)
 
-
 """
 Ein zweites Programm soll die Daten aus der soeben gespeicherten Datei einlesen und sie in einer Tabelle ausgeben.
  In dieser Tabelle soll die Ausgabe wie folgt formatiert sein:
-• Die Bundesländer werden zeilenweise dargestellt. In den Spalten der Tabelle finden sich die folgenden Daten: Bundesland, Landeshauptstadt, Fläche, Einwohnerzahl, Bevölkerungs- dichte. Die Bevölkerungsdichte berechnet sich als Quotient der Einwohnerzahl durch die Fläche und wird als Ganzzahl dargestellt.
-• Bundesländer und Landeshauptstädte werden linksbündig dargestellt, auch in der Spal- tenüberschrift.
+• Die Bundesländer werden zeilenweise dargestellt. In den Spalten der Tabelle finden sich die folgenden Daten:
+  Bundesland, Landeshauptstadt, Fläche, Einwohnerzahl, Bevölkerungs- dichte. 
+  Die Bevölkerungsdichte berechnet sich als Quotient der Einwohnerzahl durch die Fläche und wird 
+  als Ganzzahl dargestellt.
+• Bundesländer und Landeshauptstädte werden linksbündig dargestellt, auch in der Spaltenüberschrift.
 • Zahlenwerte werden rechtsbündig und Dezimaltrennzeichen werden untereinander dargestellt.
  Zugehörige Spaltenüberschriften werden ebenfalls rechtsbündig dargestellt.
 Das Einlesen der Daten und die tabellarische Ausgabe sollen getrennt voneinander durchgeführt werden.
@@ -55,4 +58,14 @@ Niedersachsen          | Hannover   |  47709.82 |   8003421 |                167
 Schleswig-Holstein     | Kiel       |  15804.30 |   2910875 |                184
 """
 
+daten = open("bundesFile.txt", "r")
+daten2 = daten.read().split(":",";")
+for zeilen in daten2:
+    # print(zeilen[11:zeilen.find(";")])
+    print(zeilen)
+    if zeilen != "Bundesland":
+        #bundes = zeilen[0:zeilen.find(";")]
+        print(zeilen)
+    # print(zeilen)
 
+daten.close()

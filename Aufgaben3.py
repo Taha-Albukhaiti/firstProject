@@ -92,7 +92,7 @@ mar = input("Geben Sie Ihre Matrikelnummer: ")
 s = False
 
 for line in inp1[0]:
-    myfile1 = open('studierende_' + line + '.csv', "a+")
+    myfile1 = open('files/studierende_' + line + '.csv', "a+")
     myfile1.write(inp.strip() + ";" + inp1.strip() + ";" + mar + "\n")
     myfile1.seek(0)
     print(myfile1.read())

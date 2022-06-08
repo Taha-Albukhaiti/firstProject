@@ -1,0 +1,5 @@
+Bundesland:Bremen;Hauptstadt:Bremen;Fläche:419.38;Einwohner:680130
+Bundesland:Hamburg;Hauptstadt:Hamburg;Fläche:755.10;Einwohner:1851430
+Bundesland:Mecklenburg-Vorpommern;Hauptstadt:Schwerin;Fläche:23211.25;Einwohner:
+Bundesland:Niedersachsen;Hauptstadt:Hannover;Fläche:47709.82;Einwohner:8003421
+Bundesland:Schleswig-Holstein;Hauptstadt:Kiel;Fläche:15804.30;Einwohner:2910875
