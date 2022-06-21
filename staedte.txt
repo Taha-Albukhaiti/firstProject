@@ -1,0 +1,20 @@
+Berlin;3664088;Berlin
+Hamburg;1852478;Hamburg
+München;1488202;Bayern
+Köln;1083498;Nordrhein-Westfalen
+Frankfurt am Main;763380;Hessen
+Stuttgart;630305;Baden-Württemberg
+Düsseldorf;620523;Nordrhein-Westfalen
+Leipzig;597493;Sachsen
+Dortmund;588250;Nordrhein-Westfalen
+Essen;582415;Nordrhein-Westfalen
+Bremen;566573;Bremen
+Dresden;556227;Sachsen
+Hannover;534049;Niedersachsen
+Nürnberg;515543;Bayern
+Duisburg;495885;Nordrhein-Westfalen
+Bochum;364454;Nordrhein-Westfalen
+Wuppertal;355004;Nordrhein-Westfalen
+Bielefeld;333509;Nordrhein-Westfalen
+Bonn;330579;Nordrhein-Westfalen
+Münster;316403;Nordrhein-Westfalen

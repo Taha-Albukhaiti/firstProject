@@ -412,3 +412,44 @@ def array_front9(nums):
     return False
 
 
+print(" Zahlenraten ")
+print("-------------")
+print()
+richtige_zahl = 3
+while richtige_zahl != int(input("Gib eine Zahl im Bereich von 1 bis 5 ein:")):
+    print("Leider falsch, versuche es noch einmal.\n")
+print("Richtig!", richtige_zahl, "ist die gesuchte Zahl.")
+
+
+# eingabe = input("Gib einen String ein:")
+# print(eingabe, "vom Typ", type(eingabe), "\n")
+
+# Eine Typkonvertierung mittels 'list' liefert meist nicht die gewünschte Liste:
+# eingabe = eval(input("Gib eine Liste ein (1. Versuch):"))
+# print(eingabe, "vom Typ", type(eingabe), "\n")
+def fakultaet_iterativ(n):
+    i = 1
+    fak = 1
+    if n == i or n == 1:
+        return 1
+    while i <= n:
+        fak *= i
+        i += 1
+    return fak  # Rueckgabewert
+
+
+def fakultaet_rekursiv(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * fakultaet_rekursiv(n - 1)
+
+
+# Hier steht der die Funktionen aufrufende Code
+
+while True:
+    antw = int(input("Geben Sie die Zahl an: "))
+    print("Itrativ", fakultaet_iterativ(antw))
+    print("Rekursiv", fakultaet_rekursiv(antw))
+    nochmal = input("Möchten Sie nochmal: ")
+    if nochmal == "-1":
+        break

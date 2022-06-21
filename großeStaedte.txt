@@ -1,0 +1,4 @@
+1 Berlin;3664088;Berlin
+2 Hamburg;1852478;Hamburg
+3 München;1488202;Bayern
+4 Köln;1083498;Nordrhein-Westfalen

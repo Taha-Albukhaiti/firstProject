@@ -17,7 +17,7 @@ Hinweis: Um ein Zeichen in einem String durch ein anderes Zeichen zu ersetzen,
  alle Vorkom- men von “x” in dem String durch “y”.
 """
 
-
+"""
 def funk(bundsland, hauptstast, flaeche, einwohner):
     bundFile = open("bundesFile.txt", "a+")
     bundFile.write(r"Bundesland:" + bundsland.strip() + ";" + "Hauptstadt:"
@@ -36,7 +36,7 @@ while True:
     flaeche1 = flaeche.replace(",", ".")
     einwohner = input("Wieviel Einwohner gibt es da? ")
     funk(bundsland, hauptstast, flaeche1, einwohner)
-
+"""
 """
 Ein zweites Programm soll die Daten aus der soeben gespeicherten Datei einlesen und sie in einer Tabelle ausgeben.
  In dieser Tabelle soll die Ausgabe wie folgt formatiert sein:
@@ -58,13 +58,34 @@ Niedersachsen          | Hannover   |  47709.82 |   8003421 |                167
 Schleswig-Holstein     | Kiel       |  15804.30 |   2910875 |                184
 """
 
-daten = open("bundesFile.txt", "r")
-daten2 = daten.read().split(":",";")
+
+def funk(bundsland, hauptstast, flaeche, einwohner):
+    bundFile = open("bundesFile2.txt", "a+")
+    bundFile.write(f"- Datensatz" + "\n\n")
+    bundFile.write(r"Bundesland: " + bundsland.strip() + "\n" + "Hauptstadt: "
+                   + hauptstast.strip() + "\n" + "Fläche    : " + flaeche.strip() + "\n" + "Einwohner : "
+                   + einwohner.strip() + "\n\n")
+    print(bundFile.read())
+    bundFile.close()
+
+
+while True:
+    bundsland = input("Wie heißt Ihre Bunsland? ")
+    if bundsland[0:] == "-1":
+        break
+    hauptstast = input("Wie heißt Ihre Hauptstadt? ")
+    flaeche = input("Wie groß ist die Fläsche? ")
+    flaeche1 = flaeche.replace(",", ".")
+    einwohner = input("Wieviel Einwohner gibt es da? ")
+    funk(bundsland, hauptstast, flaeche1, einwohner)
+
+daten = open("bundesFile2.txt", "r")
+daten2 = daten.read().split(":", ";")
 for zeilen in daten2:
     # print(zeilen[11:zeilen.find(";")])
     print(zeilen)
     if zeilen != "Bundesland":
-        #bundes = zeilen[0:zeilen.find(";")]
+        # bundes = zeilen[0:zeilen.find(";")]
         print(zeilen)
     # print(zeilen)
 
