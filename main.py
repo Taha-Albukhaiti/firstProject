@@ -1277,7 +1277,6 @@ for skill in mySkills:
 
     print(f"My Progress in Lang {skill} Is: {mySkills.get(skill)}")
 
-
 # -----------------
 # -- Loop => For --
 # -- Nested Loop --
@@ -1290,30 +1289,30 @@ skills = ['Html', 'Css', 'Js']
 
 for name in peoples:  # Outer Loop
 
-  print(f"{name} Skills Is: ")
+    print(f"{name} Skills Is: ")
 
-  for skill in skills:  # Inner Loop
+    for skill in skills:  # Inner Loop
 
-    print(f"- {skill}")
+        print(f"- {skill}")
 
 # Dictionary
 
 peoples = {
-  "Osama": {
-    "Html": "70%",
-    "Css": "80%",
-    "Js": "70%"
-  },
-  "Ahmed": {
-    "Html": "90%",
-    "Css": "80%",
-    "Js": "90%"
-  },
-  "Max": {
-    "Html": "70%",
-    "Css": "60%",
-    "Js": "90%"
-  }
+    "Osama": {
+        "Html": "70%",
+        "Css": "80%",
+        "Js": "70%"
+    },
+    "Ahmed": {
+        "Html": "90%",
+        "Css": "80%",
+        "Js": "90%"
+    },
+    "Max": {
+        "Html": "70%",
+        "Css": "60%",
+        "Js": "90%"
+    }
 }
 
 print(peoples["Osama"])
@@ -1326,11 +1325,10 @@ print(peoples["Max"]['Css'])
 
 for name in peoples:
 
-  print(f"Skills and Progress For {name} Is: ")
+    print(f"Skills and Progress For {name} Is: ")
 
-  for skill in peoples[name]:
-
-    print(f"{skill.upper()} => {peoples[name][skill]}")
+    for skill in peoples[name]:
+        print(f"{skill.upper()} => {peoples[name][skill]}")
 
 print("#" * 50)
 
@@ -1344,11 +1342,10 @@ myNumbers = [1, 2, 3, 5, 7, 10, 13, 14, 15, 19]
 
 for number in myNumbers:
 
-  if number == 13:
+    if number == 13:
+        continue
 
-    continue
-
-  print(number)
+    print(number)
 
 print("#" * 50)
 
@@ -1356,11 +1353,10 @@ print("#" * 50)
 
 for number in myNumbers:
 
-  if number == 13:
+    if number == 13:
+        break
 
-    break
-
-  print(number)
+    print(number)
 
 print("#" * 50)
 
@@ -1368,11 +1364,10 @@ print("#" * 50)
 
 for number in myNumbers:
 
-  if number == 13:
+    if number == 13:
+        pass
 
-    pass
-
-  print(number)
+    print(number)
 
 print("#" * 60)
 # ------------------------------
@@ -1380,10 +1375,10 @@ print("#" * 60)
 # ------------------------------
 
 mySkills = {
-  "HTML": "80%",
-  "CSS": "90%",
-  "JS": "70%",
-  "PHP": "80%"
+    "HTML": "80%",
+    "CSS": "90%",
+    "JS": "70%",
+    "PHP": "80%"
 }
 
 print(mySkills.items())
@@ -1391,32 +1386,29 @@ print(mySkills.items())
 #######################
 
 for skill in mySkills:
-
-  print(f"{skill} => {mySkills[skill]}")
+    print(f"{skill} => {mySkills[skill]}")
 
 #######################
 
 for skill_key, skill_progress in mySkills.items():
-
-  print(f"{skill_key} => {skill_progress}")
+    print(f"{skill_key} => {skill_progress}")
 
 #######################
 
 myUltimateSkills = {
-  "HTML": {
-    "Main": "80%",
-    "Pugjs": "80%"
-  },
-  "CSS": {
-    "Main": "90%",
-    "Sass": "70%"
-  }
+    "HTML": {
+        "Main": "80%",
+        "Pugjs": "80%"
+    },
+    "CSS": {
+        "Main": "90%",
+        "Sass": "70%"
+    }
 }
 
 for main_key, main_value in myUltimateSkills.items():
 
-  print(f"{main_key} Progress Is: ")
+    print(f"{main_key} Progress Is: ")
 
-  for child_key, child_value in main_value.items():
-
-    print(f"- {child_key} => {child_value}")
+    for child_key, child_value in main_value.items():
+        print(f"- {child_key} => {child_value}")
